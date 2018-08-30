@@ -25,6 +25,7 @@ export class HeroesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(`ngOnInit Heroes`);
   }
 
 }
