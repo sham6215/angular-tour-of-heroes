@@ -11,12 +11,13 @@ function createWindow () {
 
   //console.log(`file://${__dirname}\\dist\\angular-electron\\index.html`);
   //let url = `file://N:/work/projects/Trident/Electron/angular-electron/dist/angular-electron/index.html`;
-  let url = `./dist/dev/index.html`;
+  let url = `http://localhost:4220/index.html`;
   //let url = `./dist/angular-tour-of-heroes/index.html`;
   //let url = `./src/index.html`;
   console.log(url);
   console.warn(url);
-  win.loadFile(url);
+  //win.loadFile(url);
+  win.loadURL(url);
 
   // и загрузит index.html приложение.
   //win.loadFile(`file://${__dirname}/dist/angular-electron/index.html`)
